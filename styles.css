@@ -6,6 +6,13 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Satisfy', cursive;
 */
 
+:root {
+    --dark-brown: #3d2f22;
+    --mid-brown: #5e4e3f;
+    --light-brown: #918376;
+    --bg-brown: #ccc0b6;
+}
+
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -15,6 +22,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+    background-color: var(--dark-brown);
 }
 
 a{
@@ -33,30 +41,60 @@ header{
 
 h1{
     font-family: 'Satisfy', cursive;
+    margin: 0 auto;
 }
 
 .tabs{
-    background-color: yellow;
-    
+    background-color: var(--bg-brown);
+    border: 3px solid var(--mid-brown);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 22px 5px rgba(61, 47, 34, .5);
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
 }
 
+@media screen and (max-width: 400px) {
+    .tabs {max-width: 270px;}
+  }
+
 .tab{
-    /* max-width: 500px; */
-    background-image: url("images/triangle.png");
+    background-image: url("https://ak.picdn.net/shutterstock/videos/6354461/thumb/2.jpg");
     width: 12rem;
     height: 10vh;
-    background-color: pink;
     border: 1px solid black;
+    border-radius: 1rem;
     margin: 1rem auto;
     padding: 0 1rem;
     line-height: 10vh;
+    font-family: 'Satisfy', cursive;
+    font-size: large;
+    font-weight: 600;
 }
 
 li{
     display: inline;
+    margin: 0 1rem;
 }
+
+ul{
+    margin-bottom: 0;
+    padding-inline-start: 0;
+}
+
+footer{
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--dark-brown);
+}
+
+.footHeading{
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
