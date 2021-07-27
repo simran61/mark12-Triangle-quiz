@@ -61,7 +61,8 @@ h1{
   }
 
 .tab{
-    background-image: url("https://ak.picdn.net/shutterstock/videos/6354461/thumb/2.jpg");
+    /* background-image: url("https://ak.picdn.net/shutterstock/videos/6354461/thumb/2.jpg"); */
+    background-color: var(--mid-brown);
     width: 12rem;
     height: 10vh;
     border: 1px solid black;
@@ -97,4 +98,46 @@ footer{
     color: white;
 }
 
+/* 1st tab: check angles */
 
+.card{
+    padding: 1rem;
+    max-width: 600px;
+    /* background-color: var(--light-brown); */
+    /* align-items: center; */
+    text-align: center;
+    margin: auto;
+}
+
+input{
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    /* border: 2px solid var(--dark-brown); */
+    border-radius: 1rem;
+}
+
+.angles{
+    padding: 1rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--bg-brown);
+    background-color: var(--dark-brown);
+    color: white;
+}
+
+.result{
+    margin: 1rem;
+    /* background-color: var(--mid-brown); */
+    color: var(--mid-brown);
+    font-weight: 900;
+    padding: 0.5rem;
+    border-radius: .7rem;
+    border: 1px solid var(--dark-brown);
+    max-width: 60%;
+    align-items: center;
+    margin: 1rem auto;
+}
