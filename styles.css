@@ -11,6 +11,7 @@ font-family: 'Satisfy', cursive;
     --mid-brown: #5e4e3f;
     --light-brown: #918376;
     --bg-brown: #ccc0b6;
+    --last-brown: #e2d8cf;
 }
 
 body{
@@ -113,8 +114,9 @@ input{
     display: block;
     margin: 0.5rem auto;
     padding: 0.5rem;
-    /* border: 2px solid var(--dark-brown); */
-    border-radius: 1rem;
+    border: 1px solid var(--dark-brown);
+    border-radius: 0.7rem;
+    background-color: var(--last-brown);
 }
 
 .angles{
@@ -127,6 +129,7 @@ button{
     border: 1px solid var(--bg-brown);
     background-color: var(--dark-brown);
     color: white;
+    margin-top: 0.5rem;
 }
 
 .result{
@@ -140,4 +143,12 @@ button{
     max-width: 60%;
     align-items: center;
     margin: 1rem auto;
+}
+
+.formula{
+    color: var(--mid-brown);
+    font-family: 'Satisfy', cursive;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
