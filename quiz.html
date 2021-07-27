@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran | Angles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="brand"><a class="tag" href="/">SimranCodes</a></div>
+        <div><a href="https://github.com/simran61"><i class="fab fa-github"></i></a></div>
+    </nav>
+
+    <div class="card">
+        <h1 style="font-size: 1.5rem; color: var(--dark-brown); margin-top: 1rem;">Quiz time !!</h1>
+        <!-- <img class="angles" src="images/hypo.jpg" alt=""> -->
+
+        <form id="quiz" name="quiz">
+
+            <div class="ques">
+                <p class="margin">1. If a triangle has angles 135<sup>0</sup>, 15<sup>0</sup>, 30<sup>0</sup>. Is it an
+                    obtuse
+                    triangle?</p>
+                <input type="radio" id="mc" name="question1" value="Yes">Yes
+                <input type="radio" id="mc" name="question1" value="No">No
+            </div>
+
+            <div class="ques">
+                <p class="margin">2. If a triangle has angles 115<sup>0</sup>, 25<sup>0</sup>, 40<sup>0</sup>. Is it an
+                    acute triangle?
+                </p>
+                <input type="radio" id="mc" name="question2" value="Yes">Yes
+                <input type="radio" id="mc" name="question2" value="No">No
+            </div>
+
+            <div class="ques">
+                <p class="margin">3. If a triangle has angles 90<sup>0</sup>, 60<sup>0</sup>, 30<sup>0</sup>. Is it a
+                    right angle
+                    triangle?</p>
+                <input type="radio" id="mc" name="question3" value="Yes">Yes
+                <input type="radio" id="mc" name="question3" value="No">No
+            </div>
+
+            <div class="ques">
+                <p class="margin">4. A triangle has angles 60<sup>0</sup>, 60<sup>0</sup>, 60<sup>0</sup>. Is it an
+                    equilateral
+                    triangle?</p>
+                <input type="radio" id="mc" name="question4" value="Yes">Yes<br>
+                <input type="radio" id="mc" name="question4" value="No">No<br>
+            </div>
+
+            <div class="ques">
+                <p class="margin">5. If a triangle has angles 25<sup>0</sup>, 75<sup>0</sup>, 80<sup>0</sup>. Is it an
+                    acute triangle?
+                </p>
+                <input type="radio" id="mc" name="question5" value="Yes">Yes<br>
+                <input type="radio" id="mc" name="question5" value="No">No<br>
+            </div>
+
+            <div class="ques">
+                <p class="margin">6. If a triangle has 2 sides with equal lengths and 75<sup>0</sup> angle between them.
+                    What is the
+                    type of
+                    triangle?</p>
+                <input type="radio" id="mc" name="question6" value="Equilateral">Equilateral<br>
+                <input type="radio" id="mc" name="question6" value="Isosceles">Isosceles<br>
+                <input type="radio" id="mc" name="question6" value="Right Angle traingle">Right Angle traingle<br>
+            </div>
+
+            <div class="ques">
+                <p class="margin">7. If a triangle has 2 angles of 75<sup>0</sup>. What is the measure of third angle in
+                    degree?</p>
+                <input type="radio" id="mc" name="question7" value="25">25<br>
+                <input type="radio" id="mc" name="question7" value="30">30<br>
+                <input type="radio" id="mc" name="question7" value="15">15<br>
+            </div>
+
+            <div class="ques">
+                <p class="margin">8. If a triangle has 2 sides with equal lengths and 60<sup>0</sup> angle between them.
+                    What is the
+                    type of
+                    triangle?</p>
+                <input type="radio" id="mc" name="question8" value="Equilateral">Equilateral<br>
+                <input type="radio" id="mc" name="question8" value="Isosceles">Isosceles<br>
+                <input type="radio" id="mc" name="question8" value="Both">Both<br>
+            </div>
+
+            <div class="ques">
+                <p class="margin">9. The perimeter of an equilateral triangle is 15cm. What is the length of one side?
+                </p>
+                <input type="radio" id="mc" name="question9" value="15cm">15cm<br>
+                <input type="radio" id="mc" name="question9" value="45cm">45cm<br>
+                <input type="radio" id="mc" name="question9" value="5cm">5cm<br>
+            </div>
+
+            <div class="ques">
+                <p class="margin">10. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</p>
+                <input type="radio" id="mc" name="question10" value="Equilateral">Equilateral<br>
+                <input type="radio" id="mc" name="question10" value="Isosceles">Isosceles<br>
+                <input type="radio" id="mc" name="question10" value="Scalene">Scalene<br>
+            </div>
+
+            <!-- <input id="button" type="button" value="I'm finished" onclick="check()"> -->
+
+
+        </form>
+
+        <div id="after_submit">
+            <p id="message"></p>
+            <p id="number_correct"></p>
+            <img id="picture">
+        </div>
+
+
+
+
+
+
+
+
+
+        <button id="button" onclick="check()">Submit</button>
+        <div class="result" id="after_submit">This is a message</div>
+    </div>
+
+    <footer>
+        <h3 class="footHeading">Connect with me</h3>
+        <ul class="">
+            <li class="">
+                <a class="" target="_blank" href="https://github.com/simran61"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="">
+                <a class="" target="_blank" href="https://www.linkedin.com/in/simran-gangwani-b93a441b2/"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="">
+                <a class="" target="_blank" href="https://twitter.com/SimranGangwani3"><i
+                        class="fab fa-twitter"></i></a>
+            </li>
+            <li class="">
+                <a class="" target="_blank" href="https://www.instagram.com/simran_wb65/"><i
+                        class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="javascript/quiz.js"></script>
+</body>
+
+</html>

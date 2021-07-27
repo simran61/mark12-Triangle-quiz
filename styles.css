@@ -152,3 +152,22 @@ button{
     font-size: 1.5rem;
     margin-top: 1rem;
 }
+
+/* quiz */
+
+.ques{
+    background-color: var(--last-brown);
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#mc{
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.margin{
+    margin-top: 0;
+}
+
