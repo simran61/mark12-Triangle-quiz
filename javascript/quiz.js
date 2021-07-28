@@ -45,7 +45,7 @@ function check() {
 	}
 	
 
-	var messages=["Great job!","That's good","You reallly need to do better"];
+	var messages=["Great job!","That's good!","You reallly need to do better!"];
 	// var pictures=["congo.gif","okay.gif","zero.gif"];
 	var range;
 	if (correct<=3) {
@@ -60,7 +60,5 @@ function check() {
 
 	document.getElementById('after_submit').style.visibility="visible";
 
-	document.getElementById("message").innerHTML=messages[range];
-	document.getElementById('number_correct').innerHTML="You got "+correct+" correct.";
-	// document.getElementById('picture').src=pictures[range];
+	document.getElementById('number_correct').innerHTML=messages[range]+" You got "+correct+" correct.";
 }

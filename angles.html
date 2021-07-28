@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simran | Angles</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <nav>
         <div class="brand"><a class="tag" href="/">SimranCodes</a></div>
@@ -15,13 +19,16 @@
     </nav>
 
     <div class="card">
-        <h1 style="font-size: 1.5rem; color: var(--dark-brown); margin-top: 1rem;">Enter the angles in the below input field and we will tell you if these angles make a triangle</h1>
+        <h1 style="font-size: 1.5rem; color: var(--dark-brown); margin-top: 1rem;">Enter the angles in the below input
+            field and we will tell you if these angles make a triangle</h1>
         <img class="angles" src="images/checkAngles.png" alt="">
-        <input type="number" class="a" placeholder="Enter angle A">
-        <input type="number" class="b" placeholder="Enter angle B">
-        <input type="number" class="c" placeholder="Enter angle C">
-        <button>Submit</button>
-        <div class="result">This is a message</div>
+        <form action="" class="input">
+            <input type="number" id="first" placeholder="Enter angle A">
+            <input type="number" id="second" placeholder="Enter angle B">
+            <input type="number" id="third" placeholder="Enter angle C">
+        </form>
+        <button class="btn">Submit</button>
+        <div class="result" id="after_submit"></div>
     </div>
 
     <footer>
@@ -44,5 +51,8 @@
             </li>
         </ul>
     </footer>
+
+    <script src="javascript/angles.js"></script>
 </body>
+
 </html>
