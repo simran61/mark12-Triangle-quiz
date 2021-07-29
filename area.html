@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simran | Angles</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <nav>
         <div class="brand"><a class="tag" href="/">SimranCodes</a></div>
@@ -15,50 +19,46 @@
     </nav>
 
     <div class="card">
-        <h1 style="font-size: 1.5rem; color: var(--dark-brown); margin-top: 1rem;">Select an option from below as per the data you have to calculate the area</h1>
+        <h1 style="font-size: 1.5rem; color: var(--dark-brown); margin-top: 1rem;">Select an option from below as per
+            the data you have to calculate the area</h1>
 
-        <img style="width: 170px;" src="images/areaCat.gif" alt="">
+        <img style="width: 170px; margin-top: 1.2rem;" src="images/areaCat.gif" alt="">
 
         <div class="options">
-            <div style="margin-top: 0;" class="result ques1">If you have lenght of base and height </div>
-            <div class="result ques2">If you have length of 3 sides</div>
-            <div class="result ques3">If you have length of 2 sides and included angle</div>
-        </div>            
-
-        <div class="details first" style="display: none;">
-            <img class="angles" src="images/hypo.jpg" alt="">
-        <input type="number" class="" placeholder="Enter base">
-        <input type="number" class="" placeholder="Enter height">
-        <button>Calculate</button>
-        <div class="formula">Area= 1/2*base*height</div>
-        <div class="result">This is a message</div>
+            <div style="margin-top: 0;" class="boxlink ques1">If you have lenght of base and height </div>
+            <div class="boxlink ques2">If you have length of 3 sides</div>
+            <div class="boxlink ques3">If you have length of 2 sides and included angle</div>
         </div>
 
-        <div class="details second" style="display: none;">
+        <div class="details" id="first" style="display: none;">
+            <img class="angles" src="images/hypo.jpg" alt="">
+            <input type="number" class="base" placeholder="Enter base">
+            <input type="number" class="height" placeholder="Enter height">
+            <button class="btn btn1">Calculate</button>
+            <div class="formula">Area= 1/2*base*height</div>
+            <div class="result" id="after_submit"></div>
+        </div>
+
+        <div class="details" id="second" style="display: none;">
             <img class="angles" src="images/checkAngles.png" alt="">
-        <input type="number" class="" placeholder="Enter side a">
-        <input type="number" class="" placeholder="Enter side b">
-        <input type="number" class="" placeholder="Enter side c">
-        <button>Calculate</button>
-        <div class="formula">Area= √(s(s-a)(s-b)(s-c))</div>
-        <div class="result">This is a message</div>
+            <input type="number" class="sidea" placeholder="Enter side a">
+            <input type="number" class="sideb" placeholder="Enter side b">
+            <input type="number" class="sidec" placeholder="Enter side c">
+            <button class="btn btn2">Calculate</button>
+            <div class="formula">Area= √(s(s-a)(s-b)(s-c))</div>
+            <div class="result" id="after_submit1"></div>
         </div>
 
-        <div class="details third" style="display: none;">
+        <div class="details" id="third" style="display: none;">
             <img class="angles" src="images/hypo.jpg" alt="">
-        <input type="number" class="" placeholder="Enter base (b)">
-        <input type="number" class="" placeholder="Enter hypotenuse (c)">
-        <input type="number" class="" placeholder="Enter angle (A=degree)">
-        <button>Calculate</button>
-        <div class="formula">Area= 1/2*b*c*sin(A)</div>
-        <div class="result">This is a message</div>
+            <input type="number" class="side1" placeholder="Enter side 1">
+            <input type="number" class="side2" placeholder="Enter side 2">
+            <input type="number" class="angle" placeholder="Enter angle (degree)">
+            <button class="btn btn3">Calculate</button>
+            <div class="formula">Area= 1/2*b*c*sin(A)</div>
+            <div class="result" id="after_submit2"></div>
         </div>
 
-        <!-- <img class="angles" src="images/hypo.jpg" alt="">
-        <input type="number" class="a" placeholder="Enter side A">
-        <input type="number" class="b" placeholder="Enter side B">
-        <button>Submit</button>
-        <div class="result">This is a message</div> -->
     </div>
 
     <footer>
@@ -81,5 +81,6 @@
             </li>
         </ul>
     </footer>
+    <script src="javascript/area.js"></script>
 </body>
 </html>

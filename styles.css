@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400;600&family=Satisfy&display=swap');
 
-/* 
-font-family: 'Dancing Script', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Satisfy', cursive;
-*/
-
 :root {
     --dark-brown: #3d2f22;
     --mid-brown: #5e4e3f;
@@ -37,7 +31,7 @@ header{
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 1rem 1.4rem 1rem;
 }
 
 h1{
@@ -46,33 +40,15 @@ h1{
 }
 
 .tabs{
-    background-color: var(--bg-brown);
-    border: 3px solid var(--mid-brown);
-    border-radius: 1rem;
-    box-shadow: 2px 2px 22px 5px rgba(61, 47, 34, .5);
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
-    margin: 0 auto 1rem auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* background-color: var(--dark-brown); */
+    height: 180px;
+    /* line-height: 60px; */
 }
 
-@media screen and (max-width: 400px) {
-    .tabs {max-width: 270px;}
-  }
-
 .tab{
-    background-color: var(--mid-brown);
-    width: 12rem;
-    height: 10vh;
-    border: 1px solid black;
-    border-radius: 1rem;
-    margin: 1rem auto;
-    padding: 0 1rem;
-    line-height: 10vh;
-    font-family: 'Satisfy', cursive;
-    font-size: large;
-    font-weight: 600;
+    width: 60%;
 }
 
 li{
@@ -97,8 +73,6 @@ footer{
     font-size: 1.5rem;
     color: white;
 }
-
-/* 1st tab: check angles */
 
 .card{
     padding: 1rem;
@@ -141,6 +115,25 @@ button{
     padding: 0.5rem 0.7rem;
 }
 
+/* same as .result */
+.boxlink{
+    color: var(--dark-brown);
+    font-weight: 900;
+    border-radius: .7rem;
+    border: 1px solid var(--dark-brown);
+    max-width: 60%;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
+
+.color{
+    color: var(--dark-brown);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
 .formula{
     color: var(--mid-brown);
     font-family: 'Satisfy', cursive;
@@ -148,8 +141,6 @@ button{
     font-size: 1.5rem;
     margin-top: 1rem;
 }
-
-/* quiz */
 
 .ques{
     background-color: var(--last-brown);
@@ -166,6 +157,3 @@ button{
 .margin{
     margin-top: 0;
 }
-
-
-
