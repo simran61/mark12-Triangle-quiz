@@ -9,6 +9,16 @@ btn.addEventListener('click', () =>{
 
     var ans= Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
 
-    document.getElementById('after_submit').style.visibility="visible";
-    document.getElementById('after_submit').innerHTML="Your Hypotenuse is "+ans;
+    if(first.value === "" || second.value ===""){
+        document.getElementById('after_submit').style.visibility="visible";
+        document.getElementById('after_submit').innerHTML="Please enter all the values";
+
+    } else if(first.value <= 0 || second.value <= 0){
+        document.getElementById('after_submit').style.visibility="visible";
+        document.getElementById('after_submit').innerHTML="Angles cannot be negative or zero";
+    } 
+    else{
+        document.getElementById('after_submit').style.visibility="visible";
+        document.getElementById('after_submit').innerHTML="Your Hypotenuse is "+ans;
+    }
 });

@@ -25,8 +25,19 @@ ques1.addEventListener('click', () => {
     btn1.addEventListener('click', () => {
         var b = Number(base.value);
         var h = Number(height.value)
+
+        if(base.value === "" || height.value ===""){
+            document.getElementById('after_submit').style.visibility="visible";
+            document.getElementById('after_submit').innerHTML="Please enter all the values";
+    
+        } else if(base.value <= 0 || height.value <= 0){
+            document.getElementById('after_submit').style.visibility="visible";
+            document.getElementById('after_submit').innerHTML="Length cannot be negative or zero";
+        } 
+        else{
         document.getElementById('after_submit').style.visibility = "visible";
         document.getElementById('after_submit').innerHTML = "Area is " + 0.5 * b * h;
+        }
     });
 
 });
@@ -41,7 +52,15 @@ ques2.addEventListener('click', () => {
         var bs = Number(sideb.value);
         var cs = Number(sidec.value);
 
-        if ((as + bs)>cs && (bs + cs)>as && (as + cs)>bs) {
+        if(sidea.value === "" || sideb.value ==="" || sidec.value ===""){
+            document.getElementById('after_submit1').style.visibility="visible";
+            document.getElementById('after_submit1').innerHTML="Please enter all the values";
+    
+        } else if(sidea.value <= 0 || sideb.value <= 0 || sidec.value <= 0){
+            document.getElementById('after_submit1').style.visibility="visible";
+            document.getElementById('after_submit1').innerHTML="Length cannot be negative or zero";
+        } 
+        else if((as + bs)>cs && (bs + cs)>as && (as + cs)>bs) {
             var s = (as + bs + cs)/2;
 
             var ans = Math.sqrt(s * (s - as) * (s - bs) * (s - cs));
@@ -52,7 +71,7 @@ ques2.addEventListener('click', () => {
         }
         else {
             document.getElementById('after_submit1').style.visibility = "visible";
-            document.getElementById('after_submit1').innerHTML = "Invalid sides! Area cannot be calculated";
+            document.getElementById('after_submit1').innerHTML = "Invalid sides! These sides does not form a triangle. Area cannot be calculated";
         }
     });
 });
@@ -69,7 +88,17 @@ ques3.addEventListener('click', () => {
 
         var ans = (s1*s2*Math.sin(ang*Math.PI/180))/2; 
 
+        if(side1.value === "" || side2.value ==="" || angle.value ===""){
+            document.getElementById('after_submit2').style.visibility="visible";
+            document.getElementById('after_submit2').innerHTML="Please enter all the values";
+    
+        } else if(side1.value <= 0 || side2.value <= 0 || angle.value <= 0){
+            document.getElementById('after_submit2').style.visibility="visible";
+            document.getElementById('after_submit2').innerHTML="Length or angle cannot be negative or zero";
+        } 
+        else{
         document.getElementById('after_submit2').style.visibility = "visible";
         document.getElementById('after_submit2').innerHTML = "Area is " + ans;
+    }
     });
 });

@@ -11,7 +11,16 @@ btn.addEventListener('click', ()=>{
     
     let sum = a+b+c;
 
-    if(sum===180){
+    if(first.value === "" || second.value ==="" || third.value ===""){
+        document.getElementById('after_submit').style.visibility="visible";
+        document.getElementById('after_submit').innerHTML="Please enter all the values";
+
+    } else if(first.value <= 0 || second.value <= 0 || third.value <= 0){
+        document.getElementById('after_submit').style.visibility="visible";
+        document.getElementById('after_submit').innerHTML="Angles cannot be negative or zero";
+    } 
+
+    else if(sum===180){
         document.getElementById('after_submit').style.visibility="visible";
         document.getElementById('after_submit').innerHTML="Yes !! These angles make a triangle.";
 
